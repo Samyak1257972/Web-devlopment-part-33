@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors in CSS</title>
+    <style>
+        /* div p {
+            background-color: aquamarine;
+        } */
+        /* div li p {
+            background-color: aquamarine;
+        } */
+        /* div>p {
+            background-color: blueviolet;
+            color: white;
+        } */
+        
+        div+p {
+            background-color: crimson;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <ul>
+                <li>
+                    <p>This is paragraph in li</p>
+                </li>
+                <p>This is paragraph in ul</p>
+            </ul>
+            <p>This is paragraph in second div</p>
+        </div>
+        <p>This is paragraph in first div</p>
+    </div>
+    <p>This is paragraph in body</p>
+</body>
+
+</html>
